@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Purchases List{% endblock %}
+
+{% block header %}Purchases List{% endblock %}
+
+{% block content %}
+    <h2>Recent Purchases</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Supplier</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for purchase in purchases %}
+                <tr>
+                    <td>{{ purchase.supplier }}</td>
+                    <td>{{ purchase.product }}</td>
+                    <td>{{ purchase.quantity }} units</td>
+                    <!-- Add more cells as needed -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

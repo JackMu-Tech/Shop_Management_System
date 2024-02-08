@@ -1,0 +1,36 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+
+# Database
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Secret key
+secret_key.txt
+
+# Logs and cache
+log/
+__pycache__/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore SQLite database
+*.sqlite3
+
+# Ignore Mac system files
+.DS_Store
